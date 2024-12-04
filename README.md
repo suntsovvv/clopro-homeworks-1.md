@@ -189,6 +189,7 @@ yandex_compute_instance.nat-instance: Still creating... [50s elapsed]
 yandex_compute_instance.nat-instance: Still creating... [1m0s elapsed]
 yandex_compute_instance.nat-instance: Creation complete after 1m9s [id=fhmbgvt2qj4smqok390i]
 ``` 
+![Снимок1](https://github.com/user-attachments/assets/96e928f4-fba6-45bb-b9e8-df83a2540233)
 
 
 Подключаюсь к ВМ:
@@ -367,6 +368,7 @@ yandex_compute_instance.vm-2[0]: Creation complete after 48s [id=fhmga81lslj34o0
 Apply complete! Resources: 3 added, 0 changed, 0 destroyed.
 
 ```
+![Снимок2](https://github.com/user-attachments/assets/5d3b7f30-249c-4c56-942b-0031eb7103cc)
 
 Подключаюсь к машине в приват сети через машину в сети паблик и проверяю, что не ней есть доступ к интернету.
 ```bash
@@ -416,11 +418,7 @@ PING ya.ru (77.88.44.242) 56(84) bytes of data.
 4 packets transmitted, 4 received, 0% packet loss, time 3005ms
 rtt min/avg/max/mdev = 7.511/7.815/8.461/0.376 ms
 ```
-Resource Terraform для Yandex Cloud:
 
-- [VPC subnet](https://registry.terraform.io/providers/yandex-cloud/yandex/latest/docs/resources/vpc_subnet).
-- [Route table](https://registry.terraform.io/providers/yandex-cloud/yandex/latest/docs/resources/vpc_route_table).
-- [Compute Instance](https://registry.terraform.io/providers/yandex-cloud/yandex/latest/docs/resources/compute_instance).
 
 ---
 
